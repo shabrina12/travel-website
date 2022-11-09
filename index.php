@@ -12,11 +12,10 @@
     <nav class="navbar">
       <h1 class="logo">ADVENTURE</h1>
       <ul class="nav-links">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Tour</a></li>
-        <li><a href="#">Explore</a></li>
-        <li><a href="#">About</a></li>
-        <li class="ctn"><a href="#">Contact</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="about.php">About</a></li>
+        <li><a href="tour.php">Tour</a></li>
+        <li class="ctn"><a href="book.php">Book</a></li>
       </ul>
       <img src="images/menu-btn.png" alt="" class="menu-btn">
     </nav>
@@ -57,7 +56,7 @@
         <h1>EXPLORE THE WORLD</h1>
         <div class="line"></div>
         <p>lorem impsum dolor sit kskafka fkanfefnei feknfie</p>
-        <a href="#" class="ctn">Learn More</a>
+        <a href="about.php" class="ctn">About Us</a>
       </div>
     </section>
 
@@ -67,7 +66,7 @@
           <h1>UPCOMING TOURS & DESTINATION</h1>
           <div class="line"></div>
           <p>lorem impsum dolor sit kskafka fkanfefnei feknfi lorem impsum dolor sit kskafka fkanfefnei feknfi</p>
-          <a href="#" class="ctn">Learn More</a>
+          <a href="tour.php" class="ctn">Tour Packages</a>
         </div>
         <div class="col image-col">
           <div class="image-gallery">
@@ -81,7 +80,7 @@
     </section>
 
     <section class="footer">
-      <p>123 Fifth Avenue, NY 10160 New York USA | Phone: 0000-1234-5678 | Email: contactme@gmail.com</p>
+      <p>123 Ngurah Rai, 10160 Bali, Indonesia| Phone: 0000-1234-5678 | Email: contactme@gmail.com</p>
       <p>Copyright 2022 Outdoor Adventure</p>
     </section>
 
@@ -95,7 +94,7 @@
 
       window.addEventListener("scroll", function(){
         var navbar = document.querySelector(".navbar");
-        navbar.classList.toggle ("sticky", window.scrollY > 50);
+        navbar.classList.toggle ("sticky", window.scrollY > 100);
       })
     </script>
   </body>
