@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+body, html{
+  overflow-x: hidden;
+}
+/*------------------------ NAVBAR ------------------------ */
+.navbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+}
+.sticky {
+  background-color: #49497e;
+  z-index: 2;
+}
+.logo {
+  color: whitesmoke;
+}
+.nav-links{
+  display: flex;
+  align-items: center;
+}
+.nav-links li{
+  margin: 0 30px;
+  list-style-type: none;
+}
+.nav-links li a {
+  color: whitesmoke;
+}
+
+/*------------------------------------- HEADER -------------------------------------*/
+header{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/header-bg.png");
+  /*untuk mengatur agar gambar cover bisa responsive*/
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  /*untuk mengatur agar konten berada di tengah*/
+  align-items: flex-end;
+  justify-content: center;
+}
+.header-content{
+  margin-bottom: 150px;
+  color: whitesmoke;
+  text-align: center;
+}
+.header-content h2{
+  font-size: 4vmin;
+}
+.line{
+  width: 150px;
+  height: 4px;
+  background: #fc036b;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+.header-content h1{
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.ctn{
+  padding: 8px 15px;
+  background: #fc036b;
+  border-radius: 30px;
+  color: whitesmoke;
+}
+.menu-btn{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/*----------------------------SECTION EVENTS---------------------------*/
+section{
+  width: 80%;
+  margin: 80px auto;
+}
+.title{
+  text-align: center;
+  font-size: 4vmin;
+  color: #49497e;
+}
+.row{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.row .col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.events .row{
+  margin-top: 50px;
+}
+h4{
+  font-size: 3vmin;
+  color: #484872;
+  margin: 20px auto;
+}
+p{
+  color: #7c7c7c;
+  padding: 0px 40px;
+}
+.events .ctn{
+  margin-top: 30px;
+}
+
+/*----------------------------SECTION EXPLORE---------------------------*/
+.explore{
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/bg2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.explore-content{
+  width: 60%;
+  padding: 50px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.explore-content h1{
+  font-size: 7vmin;
+}
+.explore-content p{
+  color: white;
+}
+.explore-content .line{
+  margin-bottom: 50px;
+}
+.explore-content .ctn{
+  margin-top: 40px;
+}
+.content-col{
+  width: 40%;
+}
+.image-col{
+  width: 60%;
+}
+.tours .image-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+.image-gallery img{
+  max-width: 300px;
+  margin: 10px;
+}
+.content-col h1{
+  font-size: 8vmin;
+  color: #484872;
+}
+.content-col .line{
+  margin-left: -1px; /*karena line nya semua udah diatur ditengah (center), maka biar line nya ada di kiri (tempat start) dikasih code -1px*/
+}
+.content-col p{
+  padding: 0;
+  margin: 30px auto;
+}
+.content-col .ctn{
+  margin-left: -100px;
+}
+
+/*----------------------------------- SECTION FOOTER --------------------------------*/
+.footer{
+  width: 100%;
+  min-height: 100px;
+  padding: 20px 80px;
+  margin: 0;
+  background: #484872;
+  text-align: center;
+}
+.footer p{
+  color: whitesmoke;
+  margin: 20px auto;
+}
+
+@media only screen and (max-width:850px){
+  .menu-btn{ /*untuk memunculkan lambang navbar di pojok kanan atas saat ukuran mobile*/
+    display: block;
+  }
+  .navbar{
+    padding: 0;
+  }
+  .logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .nav-links{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: #484872;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu{
+    margin-top: 0px;
+    border-bottom-right-radius: 30%; /*buat ngasih efek bulet di kanan bawah navbar*/
+  }
+  .nav-links li{
+    margin: 30px auto;
+  }
+  /*------------ EVENTS ----------------*/
+  .row{
+    flex-direction: column;
+  }
+  .row .col{
+    margin: 20px auto;
+  }
+  .col img{
+    max-width: 90%; /*biar button learn more di section events punya jarak sama atas bawahnya (mobile)*/
+  }
+  /*------------ EXPLORE ----------------*/
+  .explore-content{
+    width: 100%;
+  }
+  .tours .col{
+    width: 100%;
+  }
+  .image-gallery{
+    justify-content: center;
+    align-items: center;
+  }
+  .image-gallery img{
+    width: 90%;
+  }
+  .footer{
+    padding: 10px;
+  }
+}
+
+/*-------------------------- ABOUT PAGE --------------------------*/
+.header-about {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/bali3.jpg");
+  /*untuk mengatur agar gambar cover bisa responsive*/
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  /*untuk mengatur agar konten berada di tengah*/
+  align-items: flex-end;
+  justify-content: center;
+}
+.about{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.about .image{
+  flex:1 1 30rem;
+}
+
+.about .image img{
+  width: 100%;
+}
+
+.about .content{
+  flex:1 1 41rem;
+  text-align: center;
+}
+
+.about .content h3{
+  font-size: 2.5rem;
+  color: black;
+}
+
+.about .content p{
+  font-size: 1rem;
+  color: gray;
+  line-height: 1.5;
+  padding: 1rem 0;
+}
+
+.about .content .icons-container{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.about .content .icons-container .icons{
+  padding: 2rem;
+  flex:1 1 10rem;
+}
+
+.about .content .icons-container .icons i{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #8282b8;
+}
+
+.about .content .icons-container .icons span{
+  font-size: 1.2rem;
+  color: #8282b8;
+  display: block;
+}
+
+/*-------------------------- TOUR PACAKAGES PAGE --------------------------*/
+.header-tour {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/header-tour.jpg");
+  /*untuk mengatur agar gambar cover bisa responsive*/
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  /*untuk mengatur agar konten berada di tengah*/
+  align-items: flex-end;
+  justify-content: center;
+}
+.header-tour h2 {
+  color: black;
+}
+.packages h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.packages .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+.packages .box-container .box{
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: white;
+  display: none;
+  /* transition: 0.3s; */
+  z-index: 1;
+}
+
+.packages .box-container .box:nth-child(1),
+.packages .box-container .box:nth-child(2),
+.packages .box-container .box:nth-child(3),
+.packages .box-container .box:nth-child(4),
+.packages .box-container .box:nth-child(5),
+.packages .box-container .box:nth-child(6){
+  display: inline-block;
+}
+
+.packages .box-container .box:hover{
+  transform: scale(1.1);
+}
+
+.packages .box-container .box .image{
+  height: 25rem;
+  overflow: hidden;
+}
+
+.packages .box-container .box .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: none;
+}
+
+.packages .box-container .box .content{
+  padding: 2rem;
+  text-align: center;
+}
+
+.packages .box-container .box .content h3{
+  font-size: 2rem;
+  color: black;
+}
+
+.packages .box-container .box .content p{
+  font-size: 1.2rem;
+  color: gray;
+  line-height: 1.2;
+  padding:1rem 0;
+}
+
+.packages .load-more{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/*------------------------------- BOOKING PAGE ------------------------------*/
+.header-book {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/gunung3.jpg");
+  /*untuk mengatur agar gambar cover bisa responsive*/
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  /*untuk mengatur agar konten berada di tengah*/
+  align-items: flex-end;
+  justify-content: center;
+}
+.booking h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.booking .book-form{
+  padding: 2rem;
+  background: #ebebf5;
+}
+
+.booking .book-form .flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.booking .book-form .flex .inputBox{
+  flex:1 1 25rem;
+}
+
+.booking .book-form .flex .inputBox input{
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: none;
+  margin-top: 1.5rem;
+  border: 2px solid black;
+}
+.booking .book-form .flex .inputBox option{
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: none;
+  margin-top: 1.5rem;
+  border: 2px solid black;
+}
+
+.booking .book-form .flex .inputBox input:focus{
+  background: white;
+}
+
+.booking .book-form .flex .inputBox input:focus::placeholder{
+  color: whitesmoke;
+}
+
+.booking .book-form .flex .inputBox span{
+  font-size: 1.2rem;
+  color: black;
+}
+
+.booking .book-form button{
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  padding: 8px 25px;
+  background: #363647;
+  color: whitesmoke;
+}
+
+/*------------------------- ANIMATIONS ------------------------*/
+img{
+  transition: transform .3s ease;
+}
+img:hover{
+  transform: scale(1.1);
+}
