@@ -17,7 +17,7 @@
       <h1 class="logo">ADVENTURE</h1>
       <ul class="nav-links">
         <li class="active"><a href="index.php">Home</a></li>
-        <li><a href="about.php">About</a></li>
+        <!-- <li><a href="about.php">About</a></li> -->
         <li><a href="tour.php">Tour</a></li>
         <li class="ctn"><a href="book.php">Book</a></li>
       </ul>
