@@ -9,7 +9,7 @@
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
   </head>
 
   <body>
@@ -21,7 +21,7 @@
         <li><a href="tour.php">Tour</a></li>
         <li class="ctn"><a href="book.php">Book</a></li>
       </ul>
-      <img src="images/menu-btn.png" alt="" class="menu-btn">
+      <img src="../images/menu-btn.png" alt="" class="menu-btn">
     </nav>
 
     <div class="header-book">

@@ -9,7 +9,7 @@
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
   </head>
 
   <body>
@@ -21,7 +21,7 @@
         <li><a href="tour.php">Tour</a></li>
         <li class="ctn"><a href="book.php">Book</a></li>
       </ul>
-      <img src="images/menu-btn.png" alt="" class="menu-btn">
+      <img src="../images/menu-btn.png" alt="" class="menu-btn">
     </nav>
 
     <div class="header-tour">
@@ -37,7 +37,7 @@
         <div class="box-container">
             <div class="box">
                 <div class="image">
-                    <img src="images/bali.jpg" alt="">
+                    <img src="../images/bali.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>Bali, Indonesia</h3>
@@ -48,7 +48,7 @@
 
             <div class="box">
                 <div class="image">
-                    <img src="images/venice.jpg" alt="">
+                    <img src="../images/venice.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>Venice, Italy</h3>
@@ -59,7 +59,7 @@
 
             <div class="box">
                 <div class="image">
-                    <img src="images/phuket.jpg" alt="">
+                    <img src="../images/phuket.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>Phuket, Thailand</h3>
@@ -70,7 +70,7 @@
 
             <div class="box">
                 <div class="image">
-                    <img src="images/berlin.jpg" alt="">
+                    <img src="../images/berlin.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>Germany</h3>
@@ -81,7 +81,7 @@
 
             <div class="box">
                 <div class="image">
-                    <img src="images/swiss.jpg" alt="">
+                    <img src="../images/swiss.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>Switzerland</h3>
@@ -92,7 +92,7 @@
 
             <div class="box">
                 <div class="image">
-                    <img src="images/japan.jpg" alt="">
+                    <img src="../images/japan.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>Japan</h3>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADVENTURE</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
   </head>
 
   <body>
@@ -17,7 +17,7 @@
         <li><a href="tour.php">Tour</a></li>
         <li class="ctn"><a href="book.php">Book</a></li>
       </ul>
-      <img src="images/menu-btn.png" alt="" class="menu-btn">
+      <img src="../images/menu-btn.png" alt="" class="menu-btn">
     </nav>
 
     <header>
@@ -37,13 +37,13 @@
       </div>
       <div class="row">
         <div class="col">
-          <img src="images/img1.png" alt="">
+          <img src="../images/img1.png" alt="">
           <h4>Everest Camp Trek</h4>
           <p>Lorem askfkfi aknfbjfidf kasnliofibdn ksbjdfbdifb</p>
           <a href="#" class="ctn">Learn More</a>
         </div>
         <div class="col">
-          <img src="images/img2.png" alt="">
+          <img src="../images/img2.png" alt="">
           <h4>Walking Holidays</h4>
           <p>Lorem askfkfi aknfbjfidf kasnliofibdn ksbjdfbdifb</p>
           <a href="#" class="ctn">Learn More</a>
@@ -70,10 +70,10 @@
         </div>
         <div class="col image-col">
           <div class="image-gallery">
-            <img src="images/img3.png" alt="">
-            <img src="images/img4.png" alt="">
-            <img src="images/img5.png" alt="">
-            <img src="images/img6.png" alt="">
+            <img src="../images/img3.png" alt="">
+            <img src="../images/img4.png" alt="">
+            <img src="../images/img5.png" alt="">
+            <img src="../images/img6.png" alt="">
           </div>
         </div>
       </div>
